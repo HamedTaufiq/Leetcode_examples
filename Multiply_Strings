@@ -1,0 +1,13 @@
+class Solution(object):
+    def multiply(self, num1, num2):
+        num1list = []
+        num2list = []
+        for digit in str(num1):
+            num1list.append(int(digit))
+        for digit in str(num2):
+            num2list.append(int(digit))
+            
+        number1 = int(''.join(map(str, num1list)))
+        number2 = int(''.join(map(str, num2list)))
+        return str(number1 * number2)
+            
